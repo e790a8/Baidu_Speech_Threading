@@ -11,7 +11,7 @@
 > 本项目使用[百度智能云](https://login.bce.baidu.com/)的[语音识别API]("https://ai.baidu.com/tech/speech")  
 > 使用前，请使用百度账号登录[百度智能云](https://login.bce.baidu.com/)  
 > 创建应用，添加语音识别功能  
-> ![image-20200517135924671](D:\Code\Baidu_Speech_Threading\image\image-20200517135924671.png)  
+> ![image-20200517135924671](https://github.com/lisztomania-Zero/Baidu_Speech_Threading/blob/master/image/image-20200517135924671.png)  
 > 得到AppID、API Key、Secret Key即可  
 
 ## 依赖安装
@@ -67,4 +67,4 @@ test.getMp3("test.txt")
 
 ## 效果展示
 
-![image-20200517135924672](D:\Code\Baidu_Speech_Threading\image\image-20200517135924672.png)
+![image-20200517135924672](https://github.com/lisztomania-Zero/Baidu_Speech_Threading/blob/master/image/image-20200517135924672.png)
