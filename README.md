@@ -6,7 +6,8 @@
 
 ## 项目简介
 
-​	提供一个简单的文字转语音接口，做一个轮子，可同时使用多个账号进行识别，提高效率。  
+> 提供一个简单的文字转语音接口，可同时使用多个账号进行识别，提高效率。  
+> 感觉还可以的给个star，谢谢了！
 
 ## 配置说明
 
@@ -63,10 +64,13 @@ App_ID = "" # 17xxxx0x
 API_Key = ""    # xxxxv8lbtxxxxNQG4lhxxxx
 Secret_Key = "" # xxxxDclQ4pUwxxxxQXHGcVISoxxxxxDx
 test = baidu_speech.Baidu_speech(App_ID,API_Key,Secret_Key)
-test.getMp3("test.txt")
+# test.getMp3("test.txt")
+test.getMp3("test.txt",is_Open_Threading=True)
 # test.getMp3("test.txt","test.mp3",False,{"spd":5,"pit":5,"vol":5,"per":0})
 ```
 
 ## 效果展示
 
 ![image-20200517135924672](https://github.com/lisztomania-Zero/Baidu_Speech_Threading/blob/master/image/image-20200517135924672.png)
+
+![image-20200518010300223](D:\Code\Baidu_Speech_Threading\image\image-20200517135924672.png)
