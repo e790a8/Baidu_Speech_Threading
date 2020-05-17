@@ -18,7 +18,7 @@
 
 ## 依赖安装
 
-> pip install -r requriements.txt  
+> pip install -r requirements.txt  
 
 ## 方法说明
 
