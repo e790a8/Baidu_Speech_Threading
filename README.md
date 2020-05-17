@@ -72,5 +72,3 @@ test.getMp3("test.txt",is_Open_Threading=True)
 ## 效果展示
 
 ![image-20200517135924672](https://github.com/lisztomania-Zero/Baidu_Speech_Threading/blob/master/image/image-20200517135924672.png)
-
-![image-20200518010300223](D:\Code\Baidu_Speech_Threading\image\image-20200517135924672.png)
