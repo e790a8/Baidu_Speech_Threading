@@ -1,6 +1,8 @@
 # 简单百度语音识别
 
-<img src="https://www.python.org/static/img/python-logo@2x.png" width=150px hegiht=150px align=left title="Python 3.8.2" href="https://www.python.org/ftp/python/3.8.2/python-3.8.2-amd64.exe">  
+<img src="https://www.python.org/static/img/python-logo@2x.png" width=150px hegiht=150px align=center title="Python 3.8.2" href="https://www.python.org/ftp/python/3.8.2/python-3.8.2-amd64.exe">  
+
+--------------
 
 ## 项目简介
 
