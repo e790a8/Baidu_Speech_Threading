@@ -88,29 +88,27 @@ class Baidu_speech:
 
     # 检查文件类型
     def __check_file_type(self,File_path:Path) -> bool:
+        self.__File_path_Path: str = File_path
         if self.__Now_use == 1:
             if File_path.suffix in self.__Text_type:
-                self.__File_path_Path : str = File_path
-                self.__File_save_path_str : str = File_path.name[:File_path.name.rfind(".")] + ".mp3"
+                self.__File_save_path_str : str = str(File_path.absolute()).replace(str(File_path.name),"") + File_path.name[:File_path.name.rfind(".")] + ".mp3"
                 self.__txt_data()
                 return True
             else:
                 raise "Only support：txt"
         elif self.__Now_use == 2:
             if File_path.suffix in self.__Audio_type:
-                self.__File_path_Path : Path = File_path
-                self.__File_save_path_str : str = File_path.name[:File_path.name.rfind(".")] + ".txt"
+                self.__File_save_path_str : str = str(File_path.absolute()).replace(str(File_path.name),"") + File_path.name[:File_path.name.rfind(".")] + ".txt"
                 self.__audio_data()
                 return True
             else:
                 raise "Only support: mp3,wav"
         elif self.__Now_use in [3,4]:
             if File_path.suffix in self.__Video_type:
-                self.__File_path_Path : Path = File_path
                 if self.__Now_use == 4:
-                    self.__File_save_path_str: str = File_path.name[:File_path.name.rfind(".")] + ".txt"
+                    self.__File_save_path_str: str = str(File_path.absolute()).replace(str(File_path.name),"") + File_path.name[:File_path.name.rfind(".")] + ".txt"
                 else:
-                    self.__File_save_path_str : str = File_path.name[:File_path.name.rfind(".")] + self.__Audio_format
+                    self.__File_save_path_str : str = str(File_path.absolute()).replace(str(File_path.name),"") + File_path.name[:File_path.name.rfind(".")] + self.__Audio_format
                 self.__video_data()
                 return True
             else:
